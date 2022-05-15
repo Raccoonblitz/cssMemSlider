@@ -27,12 +27,11 @@ body {
 }
 
 .slider-txt {
-    height: 50px;
+    height: 55px;
 	overflow: hidden;
 	position: relative;
-	width: 500px;
+	width: 300px;
     margin-top: 100px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
 .wrapper > input {
@@ -67,8 +66,12 @@ body {
 
 .wrapper .controls {
 	left: 50%;
-	margin-left: -98px;
+	margin-left: 90px;
 	position: absolute;
+}
+
+.controls {
+    margin-left: 1px;
 }
 
 .wrapper label:after {
@@ -111,8 +114,17 @@ body {
     right: -100%;
 	width: inherit;
 	z-index: 0;
-	transform: scale(1.5);
-	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	
+}
+
+.slides-txt {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    right: -150%;
+	font-size: 1rem;
+    z-index: 0;
+	color: #ddd;
 }
 
 #slide1:checked ~ .slider > .slide1,
@@ -124,17 +136,18 @@ body {
 	opacity: 1;
 	z-index: 1;
 	right: 0;
-    transition: right 1s;
+    transition: right 0.8s;
 }
 
-#slide1:checked ~ .slider-txt > .slide1-txt
-#slide2:checked ~ .slider-txt > .slide2-txt
-#slide3:checked ~ .slider-txt > .slide3-txt
-#slide4:checked ~ .slider-txt > .slide4-txt
-#slide5:checked ~ .slider-txt > .slide5-txt
+#slide1:checked ~ .slider-txt > .slide1-txt,
+#slide2:checked ~ .slider-txt > .slide2-txt,
+#slide3:checked ~ .slider-txt > .slide3-txt,
+#slide4:checked ~ .slider-txt > .slide4-txt,
+#slide5:checked ~ .slider-txt > .slide5-txt,
 #slide6:checked ~ .slider-txt > .slide6-txt {
-	opacity: 1;
+    opacity: 1;
 	z-index: 1;
 	right: 0;
-    transition: right 1s;
+    float:left;
+    transition: right 0.8s;
 }
