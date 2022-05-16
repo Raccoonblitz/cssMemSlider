@@ -75,7 +75,7 @@ body {
 }
 
 .wrapper label:after {
-	border: 2px solid #ddd;
+	border: 2px solid #fff;
 	content: " ";
 	display: block;
 	height: 12px;
@@ -94,7 +94,7 @@ body {
 	position: relative;
 	width: 8px;
 	border-radius: 50%;
-	transition: background ease-in-out .5s;
+
 }
 
 .wrapper label:hover, 
@@ -104,7 +104,7 @@ body {
 #slide4:checked ~ .controls label:nth-of-type(4),
 #slide5:checked ~ .controls label:nth-of-type(5),
 #slide6:checked ~ .controls label:nth-of-type(6)  {
-	background: #ddd;
+	background: #fff;
 }
 
 .slides {
@@ -114,7 +114,6 @@ body {
     right: -100%;
 	width: inherit;
 	z-index: 0;
-	
 }
 
 .slides-txt {
@@ -124,7 +123,7 @@ body {
     right: -150%;
 	font-size: 1rem;
     z-index: 0;
-	color: #ddd;
+	color: #fff;
 }
 
 #slide1:checked ~ .slider > .slide1,
