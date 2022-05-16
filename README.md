@@ -1,3 +1,3 @@
 # cssMemSlider
 
-https://github.com/Raccoonblitz/cssMemSlider/edit/main/memeSlider.html
+https://raccoonblitz.github.io/cssMemSlider/memeSlider.html
